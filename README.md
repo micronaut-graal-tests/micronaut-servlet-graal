@@ -1,9 +1,6 @@
 # Micronaut Servlet Graal #
 
-:warning: **The master branch is not used. Checkout branches for each specific servers: `tomcat`.**
-
-This is a simple test application like https://github.com/micronaut-graal-tests/micronaut-basic-app but without using
-Netty.
+Test application for Micronaut Servlet and Tomcat.
 
 To test the application:
 
