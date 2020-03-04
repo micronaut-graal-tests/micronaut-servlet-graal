@@ -10,6 +10,7 @@ group "micronaut.servlet.graal"
 repositories {
     mavenCentral()
     maven { url "https://jcenter.bintray.com" }
+    maven { url "https://oss.jfrog.org/oss-snapshot-local" }
 }
 
 configurations {
