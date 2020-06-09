@@ -15,7 +15,19 @@ repositories {
 
 configurations {
     // for dependencies that are needed for development only
-    developmentOnly 
+    developmentOnly
+
+    all {
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                // specifying a fixed version for all libraries with 'io.micronaut.data' group
+                if (details.requested.group == 'io.micronaut.servlet') {
+                    details.useVersion micronautServletVersion
+                }
+            }
+        }
+    }
+
 }
 
 dependencies {
@@ -29,7 +41,7 @@ dependencies {
     implementation "io.micronaut:micronaut-inject"
     implementation "io.micronaut:micronaut-validation"
     implementation "io.micronaut:micronaut-runtime"
-    implementation "io.micronaut.servlet:micronaut-http-server-tomcat:$micronautTomcatVersion"
+    implementation "io.micronaut.servlet:micronaut-http-server-tomcat:$micronautServletVersion"
     runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
     testAnnotationProcessor platform("io.micronaut:micronaut-bom:$micronautVersion")
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
