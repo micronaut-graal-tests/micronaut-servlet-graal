@@ -46,6 +46,7 @@ dependencies {
     implementation "io.micronaut:micronaut-runtime"
 
     implementation "io.micronaut.servlet:micronaut-http-server-tomcat:$micronautServletVersion"
+    implementation 'org.apache.tomcat.embed:tomcat-embed-core:9.0.35'
 
     runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
 
