@@ -1,8 +1,0 @@
-[
-  {"name":"org.apache.catalina.mbeans.ClassNameMBean", "methods":[{"name":"<init>","parameterTypes":[] }]},
-  {"name":"org.apache.catalina.mbeans.ConnectorMBean", "methods":[{"name":"<init>","parameterTypes":[] }]},
-  {"name":"org.apache.catalina.mbeans.ContainerMBean", "methods":[{"name":"<init>","parameterTypes":[] }]},
-  {"name":"org.apache.catalina.mbeans.ContextMBean", "methods":[{"name":"<init>","parameterTypes":[] }]},
-  {"name":"org.apache.catalina.mbeans.NamingResourcesMBean", "methods":[{"name":"<init>","parameterTypes":[] }]},
-  {"name":"org.apache.catalina.mbeans.ServiceMBean", "methods":[{"name":"<init>","parameterTypes":[] }]}
-]

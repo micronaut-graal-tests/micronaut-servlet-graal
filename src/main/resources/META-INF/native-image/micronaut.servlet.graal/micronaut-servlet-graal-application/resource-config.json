@@ -1,7 +1,0 @@
-{
-  "bundles":[
-  ],
-  "resources":[
-    {"pattern":"\\Qorg/apache/catalina/loader/JdbcLeakPrevention.class\\E"}
-  ]
-}
