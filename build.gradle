@@ -16,6 +16,16 @@ repositories {
 configurations {
     // for dependencies that are needed for development only
     developmentOnly
+
+    all {
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                if (details.requested.group == 'io.micronaut.servlet') {
+                    details.useVersion '1.0.2.BUILD-SNAPSHOT'
+                }
+            }
+        }
+    }
 }
 
 dependencies {
