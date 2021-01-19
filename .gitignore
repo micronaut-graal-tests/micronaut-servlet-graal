@@ -12,3 +12,6 @@ out/
 .settings
 .classpath
 mn-servlet-*
+servlet-tomcat*
+servlet-jetty*
+

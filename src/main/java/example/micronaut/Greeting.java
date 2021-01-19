@@ -1,4 +1,4 @@
-package micronaut.servlet.graal;
+package example.micronaut;
 
 import io.micronaut.core.annotation.Introspected;
 
