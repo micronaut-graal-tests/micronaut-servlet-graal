@@ -39,5 +39,6 @@ java {
 
 nativeImage {
     imageName('servlet-tomcat')
-    args = ['--report-unsupported-elements-at-runtime'] // only needed for JDK8
+    // report-unsupported-elements-at-runtime is only needed for JDK8
+    args = ['--report-unsupported-elements-at-runtime', '-H:+StaticExecutableWithDynamicLibC']
 }
