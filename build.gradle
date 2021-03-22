@@ -39,5 +39,4 @@ java {
 
 nativeImage {
     imageName('servlet-jetty')
-    args = ["-H:+StaticExecutableWithDynamicLibC"]
 }
