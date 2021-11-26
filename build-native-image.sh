@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./gradlew nativeImage
-cp build/native-image/servlet-tomcat .
+./gradlew nativeCompile
+cp build/native/nativeCompile/servlet-tomcat .
